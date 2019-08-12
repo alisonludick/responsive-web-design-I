@@ -184,7 +184,23 @@ body {
     align-items: flex-start;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+    html body header.head section.innovation h1 {
+        letter-spacing: 4px;
+        word-spacing: 500px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    html body header section button.start-button {
+        /* letter-spacing: 4px; */
+        word-spacing: 500px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
     html body header.head img {
         visibility: hidden;
     }
