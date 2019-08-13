@@ -190,21 +190,40 @@ body {
         word-spacing: 500px;
         text-align: center;
     }
-}
-
-@media (max-width: 800px) {
     html body header section button.start-button {
-        /* letter-spacing: 4px; */
         word-spacing: 500px;
         text-align: center;
     }
-}
-
-@media (max-width: 800px) {
     html body header.head img {
         visibility: hidden;
     }
 }
+
+@media (max-width: 500px) {
+    html body div nav.navigation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    html body div nav.navigation a {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+
+/* @media (max-width: 800px) {
+    html body header section button.start-button {
+        word-spacing: 500px;
+        text-align: center;
+    }
+} */
+
+
+/* @media (max-width: 800px) {
+    html body header.head img {
+        visibility: hidden;
+    }
+} */
 
 .top-content {
     display: flex;
@@ -233,11 +252,6 @@ body {
     align-items: flex-start;
 }
 
-.middle-img {
-    padding-left: 40px;
-    margin-left: 100px;
-}
-
 .middle-img,
 .services-header-img {
     display: inline-block;
@@ -245,11 +259,12 @@ body {
     margin: 25px;
 }
 
-@media (max-width: 500px) {
-    html body img.middle-img {
-        display: inline-block;
-        width: 100%;
+@media (max-width: 800px) {
+    html body div img.middle-img {
+        /* display: inline-block; */
+        max-width: 100%;
         height: auto;
+        /* padding: 0 100%; */
     }
 }
 
@@ -259,16 +274,45 @@ body {
     margin-bottom: 50px;
 }
 
+@media (max-width: 800px) {
+    html body section section h1 {
+        width: 50%;
+        height: auto;
+        justify-items: flex-start;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    html body section section p {
+        width: 50%;
+        height: auto;
+        justify-items: flex-start;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    html body section section h2 {
+        width: 33%;
+        height: auto;
+        justify-items: flex-start;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    html body section section p {
+        width: 33%;
+        height: auto;
+        justify-items: flex-start;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+}
+
 .intro-services {
     width: 800px;
     /* margin: 0 auto; */
     margin-left: 70px;
 }
-
-
-/* .article-services {
-    margin-left: 100px;
-} */
 
 .article-services {
     background-color: rgb(240, 239, 239);
