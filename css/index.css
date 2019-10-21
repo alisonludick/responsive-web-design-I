@@ -1,3 +1,369 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+@media (max-width: 800px) {
+    html body header.head section.innovation h1 {
+        letter-spacing: 4px;
+        word-spacing: 500px;
+        text-align: center;
+    }
+    html body header section button.start-button {
+        word-spacing: 500px;
+        text-align: center;
+    }
+    html body header.head img {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 500px) {
+    html body div nav.navigation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    html body div nav.navigation a {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+
+/* @media (max-width: 800px) {
+    html body header section button.start-button {
+        word-spacing: 500px;
+        text-align: center;
+    }
+} */
+
+
+/* @media (max-width: 800px) {
+    html body header.head img {
+        visibility: hidden;
+    }
+} */
+
+.top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.feat-about {
+    margin-top: 50px;
+    margin-left: 70px;
+    /* align-content: space-around; */
+    /* justify-content: space-between; */
+}
+
+.innovation {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.middle-img,
+.services-header-img {
+    display: inline-block;
+    width: 100%;
+    margin: 25px;
+}
+
+@media (max-width: 800px) {
+    html body div img.middle-img {
+        /* display: inline-block; */
+        max-width: 100%;
+        height: auto;
+        /* padding: 0 100%; */
+    }
+}
+
+.offerings {
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+    html body section section h1 {
+        width: 50%;
+        height: auto;
+        justify-items: flex-start;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    html body section section p {
+        width: 50%;
+        height: auto;
+        justify-items: flex-start;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    html body section section h2 {
+        width: 33%;
+        height: auto;
+        justify-items: flex-start;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    html body section section p {
+        width: 33%;
+        height: auto;
+        justify-items: flex-start;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+}
+
+.intro-services {
+    width: 800px;
+    /* margin: 0 auto; */
+    margin-left: 70px;
+}
+
+.article-services {
+    background-color: rgb(240, 239, 239);
+    border: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+    display: inline-block;
+    width: 40%;
+    /* margin-top: 50px;
+    margin-left: 50px; */
+    /* margin-bottom: 50px; */
+}
+
+.intro-services,
+.services-body {
+    margin-bottom: 50px;
+}
+
+article.article-vision {
+    margin: 15px;
+    padding: 10px;
+    display: inline-block;
+    width: 40%;
+}
+
+button {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 5px 20px;
+}
+
+.facts {
+    display: inline-flexbox;
+}
+
+.contact {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+footer {
+    margin: 0auto;
+    padding: 50px;
+    text-align: center;
+}
+
+div.facts {
+    margin: 15px;
+    padding: 10px;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
